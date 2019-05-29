@@ -6,6 +6,7 @@ public class NumbersMultiDArray {
 
 	public static void main(String[] args) {
 		int[][]nums=new int[3][4];
+		
 		nums[0][0]=100;
 		nums[0][1]=34324;
 		nums[0][2]=13200;
@@ -20,6 +21,7 @@ public class NumbersMultiDArray {
 		nums[2][1]=3451;
 		nums[2][2]=2530;
 		nums[2][3]=54555;
+		System.out.println(nums.length);
 		
 		System.out.println(Arrays.deepToString(nums));
 		

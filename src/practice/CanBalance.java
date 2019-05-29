@@ -4,37 +4,28 @@ public class CanBalance {
 
 	public static void main(String[] args) {
 //		https://codingbat.com/prob/p158767
-		
-//		canBalance([1, 1, 1, 2, 1]) → true
-//		canBalance([2, 1, 1, 2, 1]) → false
-//		canBalance([10, 10]) → true
-		
-		boolean balance=false;
-		
-		int[] nums= {10,40,20,30};
+	
+		int[] nums= {1, 1, 1, 1, 4};
 		
 		int n=nums.length;
-		int sum1=0, sum2=0;
+		int sum1=0, sum2=0, count=1, counter=0;
 		
-		if (n%2==0) {
-			for (int i=0; i<n/2; i++) {
-				sum1+=nums[i];
+		for (int i=0; i<n; i++) {
+			sum1+=nums[i];
+			for (int j=count; j<n; j++) {
+				sum2+=nums[j];
 			}
-			for (int i=n/2; i<n; i++) {
-				sum2+=nums[i];
+			if (sum1==sum2) {
+				counter++;
+				break;
 			}
-		}
-		
-	//======================================================================
-		if (sum1==sum2) {
-			balance=true;
-		}
-		else {
-			balance=false;
+			else {
+				sum2=0;
+			}
+			count++;
 		}
 	
-	System.out.println(balance);
-	//==============================================================================================================================		
+	System.out.println(counter>0 ? true: false);	
 		
 	}
 

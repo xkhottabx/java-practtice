@@ -5,9 +5,9 @@ public class FinalMethods {
 		System.out.println("Final method 1");
 	}
 	
-	class Sub extends FinalMethods{
-		public final void method1() {
-			System.out.println("Final method 1");
-		}
-	}
+//	class Sub extends FinalMethods{
+//		public final void method1() {
+//			System.out.println("Final method 1");
+//		}
+//	}
 }

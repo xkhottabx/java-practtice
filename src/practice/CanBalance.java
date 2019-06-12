@@ -1,10 +1,18 @@
 package practice;
 
 public class CanBalance {
+	public String name;
+	
+	public void CanBalance() {
+	
+		System.out.println(name);
+	}
 
 	public static void main(String[] args) {
 //		https://codingbat.com/prob/p158767
-	
+		//name="df";
+	CanBalance c=new CanBalance();
+	System.out.println(c.name);
 		int[] nums= {1, 1, 1, 1, 4};
 		
 		int n=nums.length;

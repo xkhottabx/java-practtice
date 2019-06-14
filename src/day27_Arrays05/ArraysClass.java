@@ -19,6 +19,10 @@ public class ArraysClass {
 		int[] nums2= {434,145,34,45,31,5};
 		Arrays.sort(nums2);
 		Arrays.binarySearch(nums, 145);//->1
+
+
+
+
 	}
 
 }

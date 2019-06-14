@@ -27,6 +27,7 @@ public class NumbersMultiDArray {
 		
 		
 		int[][] scores= {{3,5,10},{6,4,2,10}};
+
 		
 		System.out.println("Days played/numbers of arrays "+scores.length);
 		System.out.println("Number of values in 1: "+scores[0].length);
@@ -41,8 +42,11 @@ public class NumbersMultiDArray {
 		values[3]=new int[] {5,12,534,64434,67,34};
 		
 		System.out.println(Arrays.deepToString(values));
-		
 
+		int[][] ses= {{3,5,4},
+				{6,4,2},
+				{4,4,4}};
+		System.out.println(ses.length);
 	}
 
 }
